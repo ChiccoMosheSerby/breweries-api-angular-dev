@@ -1,9 +1,12 @@
 <h1>Breweries</h1>
-
 <ul class="brews" *ngIf="brews">
     <li class="singleBrew" *ngFor="let brew of brews">
         <p class="name">{{ brew.name }}</p>
         <p class="country">{{ brew.country }}</p>
+        <p class="state">{{ brew.state }}</p>
+        <p class="city">{{ brew.city }}</p>
+        <p class="street">{{ brew.street }}</p>
+        <p class="phone">phone: {{ brew.phone }}</p>
         <a class="site" href="{{ brew.website_url }}">site</a>
     </li>
 </ul>

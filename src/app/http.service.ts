@@ -9,6 +9,9 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   getBeer() {
-    return this.http.get('/beers')
+    let prodServerPath: string = "";
+    let devServerPath: string = "http://localhost:4000";
+
+    return this.http.get(`${prodServerPath}/beers`)
   }
 }

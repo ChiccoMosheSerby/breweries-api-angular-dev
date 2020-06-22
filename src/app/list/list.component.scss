@@ -1,0 +1,61 @@
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+        background-image: url('../../assets/img/beer2.png');
+        backdrop-filter: white;
+        background-position:bottom right;
+        background-size: 35%;
+        background-repeat: no-repeat;
+        padding: 1em;
+        margin-right: 10px;
+        width: 20%;
+        min-width: 200px;
+        height: 200px;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        // border:1px solid rgba(0, 0, 0, 0.103);
+        border-radius: 10px;
+        padding:10px;
+        background-color: #fff7d163;
+
+        :before {
+            content: "";
+            filter: grayscale(100%);
+          }
+        p {
+            margin: 0;
+        }
+
+        p.name {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        p.country {
+            text-transform: uppercase;
+            font-size: .9rem;
+            flex-grow: 1;
+        }
+    }
+}
+h1{
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    ul{
+        width: 100%;
+    li{
+            width: 100%;
+    }
+}
+}

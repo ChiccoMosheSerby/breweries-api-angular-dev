@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primary: #6f00ff;
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+    width: 100vw;
+    // background-image: url('../src/assets/img/bg.jpg');
+    // backdrop-filter: white;
+    // background-position: top;
+    // background-size:  100vw auto;
+    // background-repeat: no-repeat;
+    // min-height: 100vh;
+  
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(52,1,119);
+    background: -moz-linear-gradient(90deg, rgba(52,1,119,1) 5%, rgba(149,68,254,1) 50%, rgba(52,1,119,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(52,1,119,1) 5%, rgba(149,68,254,1) 50%, rgba(52,1,119,1) 95%);
+    background: linear-gradient(90deg, rgba(52,1,119,1) 5%, rgba(149,68,254,1) 50%, rgba(52,1,119,1) 95%);
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#340177",endColorstr="#340177",GradientType=1);
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top:0;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1rem;
+
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+
+.homeContainer{
+    ::selection{
+        color:white;
+        background-color: $primary;
+    }
+    span{
+        color:$primary;
+        font-weight: bold;
+         }
+    .txt{
+       color: $primary; 
+
+       a {
+        text-decoration: none;
+        &:hover{
+            color: darken($primary, 10%);
+        }
+    }
+
+    }
+    .contact{font-size: 0.8rem;}
+
+}
